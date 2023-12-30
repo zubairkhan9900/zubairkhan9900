@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      table{
+         border: 1px solid black;
+         padding: 30px;
+         margin: 10px;
+      }
+   </style>
+   <table>
+      <!-- javaScript Program to find out the minimum or maximum of given two numbers -->
+  
+       <tr>
+       <td> <input type="text" name="a" id="first" placeholder=""/></td>
+       </tr>
+       <tr>
+              <td> <input type="text" name="b" id="second" placeholder=""/></td>
+         </tr>
+         <tr>
+         <td> <button onclick = "small()" >Display</button> </td>
+         </tr>
+             </table>
+          </body>
+          <div id = "num"></div>
+       <script type="text/javascript">
+       function small()
+       {
+          var a,b;
+             a = parseInt(document.getElementById ("first").value);
+             b = parseInt(document.getElementById ("second").value);
+             if(a < b)
+           {
+              document.getElementById ("num").innerHTML = a+" is the minimum number";
+              }
+               else
+               if(a > b)
+               {
+                 document.getElementById ("num").innerHTML = b+" is the maximum number";
+         }
+         else
+            {
+              document.getElementById ("num").innerHTML = "Both are equal";
+                }
+         }
+  </script>
+  </html>
+</body>
+</html>

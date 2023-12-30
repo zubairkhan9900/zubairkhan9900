@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+
+    <style>
+        
+        .main{
+            padding: 20px 20px;
+            height: auto;
+            width: 380px;
+            border: 2px solid blue
+        }
+        .main p{
+            text-align: center;
+        }
+        .Answer{
+            color: rgb(223, 4, 4);
+        }    
+        .inside{
+            margin-top: 10px;
+        }
+        button{
+            height: 27px;
+            width: 34px;
+        }
+        .mathsOperation{
+            display: flex;
+        }
+        .mathsOperation .h3{
+            flex: 5;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="#">
+    <div class="main">
+        <p>Maths Operations</p>
+       
+        <div class="first" 
+        style="padding: 12px 1px;">
+            <label for="">Enter 1st number :</label>
+            <input type="text"id="fno">
+        </div>
+
+        <div class="second" 
+        style="padding: 12px 1px;">
+            <label for="">Enter 2nd number :</label>
+            <input type="text" id="sno">
+        </div>
+
+        <div class="mathsOperation">
+            <div>
+                <button onclick="return Addval()"><span class="fa-solid fa-plus"></button></span></button>
+                <button onclick="return Subval()"><span class="fa-solid fa-minus"></span></button>
+                <button onclick="return Mulval()"><span class="fa-solid fa-multiply"></span></button>
+                <div class="inside">
+                <button onclick="return Divval()"><span class="fa-solid fa-slash fa-rotate-90"></span></button>
+                <button onclick="return perval()"><span class="fa-solid fa-percent"></span></button>
+            </div>
+            </div>
+            <div class="h3">
+                <p>Answer is : <span class="Answer"></span></p>
+            </div>
+        </div>
+</form>
+</body>
+</html>

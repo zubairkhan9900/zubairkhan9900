@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h4{
+            color: red;
+            letter-spacing: 2px;
+        }
+        p{
+            height: 10px;
+            word-spacing: 3px;
+            color: rgb(103, 103, 103);   
+        }
+        .homepage{
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin:115px auto;
+        }
+        
+        .homepage .personal{
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3,1fr);
+        }
+       .homepage .personal .square{
+            height: 150px;
+            width: 150px;
+            /* border: 1px solid black; */
+            box-shadow: 3px 3px 6px 0px grey;
+            color: blue;
+            margin: auto;
+        } 
+        
+        .homepage .services{
+            /* border: 1px solid black; */
+            padding: 50px;
+        }
+        .homepage .services h1{
+            font-size: 35px;
+        }
+        span{
+            font-size: 27px;
+        }
+        .square{
+            text-align: center;
+            
+            /* margin: top; */
+        }
+        .first
+        {
+            margin: auto;
+            /* justify-items: center;
+            align-items: center; */
+        }
+        .second{
+            margin: auto;
+            /* margin: bottom; */
+        }
+        .homepage .personal .square span{
+            margin-top: 50px;
+            
+        }
+        .homepage .personal .second .block1{
+            margin-bottom: 40px;
+            
+        }
+        .homepage .personal .third .square{
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="homepage">
+        <div class="services">
+            <h4>WHAT WE PROVIDE</h4>
+            <h1>Services we're Provided</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Iusto vitae quibusdam, amet suscipit possimus id necessitatibus.
+                accusantium nam fugit quasi iste. Voluptatem, corporis ut.
+                Lorem ipsum, dolor sit amet consectetur
+            </p>
+        </div>
+        <div class="personal">
+            <div class="first">
+            <div class="square">
+                <span class="fa-solid fa-users"></span><P>Personal loan</p>
+            </div>
+        </div>
+        <div class="second">
+            <div class="square block1">
+                <span class="fa-solid fa-handshake"></span><p>Buisness loan</p>
+            </div>
+            <div class="square">
+                <span class="fa-solid fa-home"></span><p>Home loan</p>
+            </div>
+        </div>
+        <div class="third">
+            <div class="square">
+                <span class="fa solid fa-car"></span><p>Auto loan</p>
+            </div>
+            <div class="square">
+                <span class="fa-solid fa-stethoscope"></span><p>Health loan</p>
+            </div>
+            <div class="square">
+                <span class="fa solid fa-graduation-cap"></span><p>Education loan</p>
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>

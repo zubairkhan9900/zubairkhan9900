@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDIV {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(40, 125, 46);
+}
+        #myDIV1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(78, 4, 250);
+}
+</style>
+
+</head>
+<body>
+        <button onclick="myFunction()">blue</button>
+        <button onclick="myFunction1()">green</button>
+
+        <div id="myDIV">
+        <h1>Hello</h1>
+        </div>
+
+          <div id="myDIV1">
+          <h1>Hello</h1>
+           </div>
+
+<script>
+      function myFunction() {
+      document.getElementById("myDIV").style.backgroundColor = "blue";
+      document.getElementById("myDIV1").style.backgroundColor = "green";
+}
+</script>
+</body>
+</html>

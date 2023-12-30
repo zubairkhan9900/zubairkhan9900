@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+    *{
+        margin: 0px;
+        padding: 0;
+    }
+    .form1{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        margin: 20px 5px 10px 0px;
+        gap: 5px;
+        column-gap: 50px;
+
+    }
+    body{
+        background-color: rgb(83, 255, 83);
+    }
+    .button{
+        margin: 50px 0px 0px 100px;
+        padding: 30px;
+        /* font-weight: bolder; */
+    }
+    .registration
+    {
+        padding: 15px 80px 15px 80px;
+        background-color: blue;
+        color: white;
+        font-weight: bolder;
+        border-radius: 10px;
+        
+    }
+    .form{
+        background-color: white;
+        height: max-content;
+        width:500px;
+        margin: 30px 0px 0px 400px;
+    }
+    h1{
+        margin: 20px 0px 5px 125px;
+    }
+    .box
+    {
+        border-radius: 5px;
+        width: 160px;
+        padding: 5px;
+    }
+    .form1 div:nth-child(odd)
+    {
+        color: blue;
+        text-align: right;
+    }
+   </style>
+   <div class="form">
+    <div class="heading">
+        <h1>Registration for Job</h1>
+    </div>
+    <div class="form1">
+    <div>
+        First Name
+    </div>
+    <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+    <div>
+        Middle Name
+    </div>
+    <div><input type="text" name="" class="box" placeholder="Enter Middle name"></div>
+    <div>
+        Last Name
+    </div>
+    <div><input type="text" name="" class="box" placeholder="Enter Last Name"></div>
+    <div>
+        Address
+    </div>
+    <div><textarea name="" class="box" cols="20" rows="5" placeholder="Enter Address"></textarea></div>
+    <div>
+        Date of Birth
+    </div>
+    <div><input type="date" name="" class="box"></div>
+    <div>
+        Gender
+    </div>
+    <div><input type="radio" name="" class="">Male
+    <input type="radio" name="" id="">Female</div>
+    <div>
+        Experience
+    </div>
+    <div><select name="" class="box">
+        <option value="">--select--</option>
+        <option value="">Operation head</option>
+        <option value="">Sales officer</option>
+    </select></div>
+    <div>Mobile NO</div>
+    <div><input type="text" name="" class="box" placeholder="Enter Mobile No"></div>
+    <div>
+        Email id
+    </div>
+    <div><input type="text" name="" class="box" placeholder="Enter Email"></div>
+    <div>
+        Create Password
+    </div>
+    <div><input type="text" name="" class="box" placeholder="Enter Password">
+    <!-- <input type="text" name="" class=""> -->
+    </div>
+    <div></div>
+    <div><input type="checkbox" name="" class="">Show Password</div>
+    </div>
+    <div class="button">
+        <button class="registration">Register
+        </button>
+    </div>
+   </div>
+
+</body>
+</html>
