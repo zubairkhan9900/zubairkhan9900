@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+        margin: 0px;
+        padding: 0;
+    }
+    .form1{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        margin: 20px 5px 10px 0px;
+        gap: 5px;
+        column-gap: 50px;
+
+    }
+    body{
+        background-color: rgb(230, 230, 230);
+    }
+    .button{
+        /* margin: 50px 0px 0px 80px;    */
+        padding: 5px;
+        text-align: center;
+    }
+    #registration
+    {
+        padding: 8px 50px 12px 57px;
+        background-color: rgb(4, 255, 0);
+        color: white;
+        font-weight: bolder;
+        border-radius: 1px;
+        cursor: pointer;
+        
+    }
+    .form{
+        background-color: white; 
+        height: max-content;
+        width: 520px;
+        margin: 30px 0px 0px 400px;
+    }
+    h1{
+        margin: 20px 0px 5px 125px;
+    }
+    .box
+    {
+        border-radius: 5px;
+        width: 160px;
+        padding: 5px;
+    }
+    .form1 div:nth-child(odd)
+    {
+        color: blue;
+        text-align: right;
+    }
+    /* .form1 div:nth-child(even)
+    {
+        color: blue;
+        text-align: right;
+    } */
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="heading">
+            <h1>Registration form</h1>
+        </div>
+        <div class="form1">
+        <div>
+            First Name:
+        </div>
+        <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+        <div>
+            Last Name
+        </div>
+        <div><input type="text" name="" class="box" placeholder="Enter your Last name"></div>
+        <div>
+            Email:
+        </div>
+        <div><input type="text" name="" class="box" placeholder="it should contain @,."></div>
+        <div>
+          Mobile:
+          </div>
+        <div><input type="text" name="" class="box" placeholder="Only 10 digits are allowed"></div>
+           <div>
+        Gender:
+        </div>
+        <div><input type="radio" name="" class="">Male
+        <input type="radio" name="" id="">Female</div>
+         <div>
+         Date of Birth:
+         </div>
+        <div><input type="date" name="" class="box"></div>
+        <div>
+            Address:
+        </div>
+        <div><textarea name="" class="box" cols="20" rows="5" placeholder="Enter Address"></textarea></div>
+            <div>
+                City:
+            </div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div>
+                Area PIN:
+            </div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+
+            <div>
+                State:
+            </div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+
+            <div>
+                Qualification:
+            </div>
+            <div><select name="" class="box">
+                <option value="">Select Qualification</option>
+                <option value="">BCA</option>
+                <option value="">CS</option>
+                <option value="">BA</option>
+            </select></div>
+            <div>
+                Specialization:
+            </div>
+           <div>
+            <input type="checkbox">Computer Science<br>
+           <input type="checkbox">Information Technology<br>
+           <input type="checkbox">Computer Architecture<br> 
+           <input type="checkbox">Tele Communication
+        </div>
+           <!-- <div><input type="checkbox">Tele Communication</div> -->
+
+           <div>
+            Password:
+        </div>
+        <div><input type="text" name="" class="box" placeholder=""></div>
+    
+  </div>
+  <div class="button">
+    <button id="registration">Register</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#registration").click(function(){
+            alert("enter proper value")
+
+        })
+    })
+</script>
+</body>
+</html>
