@@ -1,0 +1,410 @@
+:root{
+    --pink: #ff046f;
+    --violet: #ff0000;
+
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background: var(--pink);
+    overflow: hidden;
+}
+
+html{
+    font-size: 68%;
+    overflow-x: hidden;
+}
+
+/* body{
+    background: #333;
+} */    
+header{
+width: 96%;
+background: #e0dede;
+position: fixed;
+top: 2rem;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 2rem;
+z-index: 1000;
+}
+header a{
+    font-size: 1.5rem;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .nav ul li a{
+    font-size: 2rem;
+    color: var(--pink);
+    transition: 2s;
+}
+/* header .nav ul li .active{
+} */
+
+header .nav ul li a:hover{
+    color: var(--violet);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: var(--violet);
+    text-decoration: uppercase;
+}
+
+header .logo i{
+    /* font-size: 3rem; */
+    color: var(--pink);
+    padding: 0 .2rem;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: var(--pink);
+    cursor: pointer;
+    display: none;
+}
+.Home{
+    min-height: 100vh;
+    background: url(img.21.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* z-index: -1111; */
+    overflow: hidden;
+    position: relative;
+    /* opacity: 90%; */
+}
+
+.Home .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+.Home .content h1{
+    font-size: 2rem;
+    color: white;
+    padding: 0rem 1rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    text-transform: uppercase;
+}
+.Home .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 25rem;
+}
+.Home .content button{
+    height: 4rem;
+    width: 20rem;
+    border-radius: 5rem;
+    background: var(--pink);
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
+}
+.Home .content button:hover{
+    letter-spacing: .2rem;
+}
+.Home .box-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex: wrap;
+}
+.Home .box-container .box{
+    height: 20rem;
+    width: 25rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+    margin: 2rem;
+    cursor: pointer;
+
+}
+
+.Home .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--violet);
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+
+.Home .box-container .box h3{
+    font-size: 2rem;
+    color: var(--violet);
+    transform: .2s;
+}
+
+.Home .box-container .box p{
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    color: #666;
+}
+
+.Home .box-container .box:hover i{
+    background: var(--pink);
+}
+
+.Home .box-container .box:hover h3{
+    color: var(--pink);
+    transition: 2s;
+}
+
+.Home::before{
+    content: '';
+    position: absolute;
+    bottom: -25rem; left: 50%;
+    transform: translate(-50%);
+    /* border-top: 70vh solid #fff; */
+    width: 120%;
+    border-radius: 50%;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+/* teacher section starts here */
+
+.teacher{
+    background: white;
+    /* background-color: red; */
+}
+
+ .card-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+    padding: 2rem 0;
+    
+}
+
+.teacher .card-container .card{
+    padding: 2rem;
+    margin: 2rem;
+    background: white;
+    text-align: center;
+    width: 28rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.teacher .card-container .card img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    /* filter: grayscale(); */
+    transition: .2s;
+}
+.teacher .card-container .card h3{
+    color: var(--pink);
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.teacher .card-container .card p{
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.teacher .card-container .card .icons{
+    font-size: 1.9rem;
+    padding: 1.5rem .5rem;
+    color: var(--pink);
+}
+
+.teacher .card-container .card .icons a:hover{
+    color: var(--pink);
+    /* transition: .2s; */
+}
+
+.teacher h1{
+    padding: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--pink);
+
+}
+
+.teacher h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* courses section starts here */
+
+.courses .box-container{
+    width: 85%;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box-container{
+    display: grid;
+    justify-items: 3fr 6fr;
+
+}
+.courses .box-container .box{
+    height: 18rem;
+    width: 25rem;
+    margin: 3.5rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem 0 .1rem var(--violet), .5rem .5rem .5rem rgba(0,0,0,.3);
+
+}
+
+.courses .box-container .box i{
+    height: 10rem;
+    width: 10rem;
+    line-height: 8rem;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background: var(--pink);
+    margin-top: -4rem;
+    border: 1rem solid #fff;
+    border-left: 1rem solid var(--pink);
+    border-right: 1rem solid var(--pink);
+    box-shadow: 0 0 0 1rem #fff inset;
+    font-size: 3.5rem;
+
+}
+
+.courses .box-container .box h3{
+    font-size: 2rem;
+    color: var(--violet);
+}
+
+.courses .box-container .box p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 0 .5rem;
+}
+
+.courses h1{
+    color: var(--violet);
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.courses h3{
+    color: #666;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.courses .box-container .box p{
+    /* color: #ff046f; */
+    padding: 0.5rem;
+}
+
+/* =============================== footer starts here ================================================ */
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: var(--pink);
+}
+
+
