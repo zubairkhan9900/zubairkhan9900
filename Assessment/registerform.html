@@ -10,6 +10,9 @@
         margin: 0px;
         padding: 0;
     }
+    span {
+            color: red;
+        }
     .form1{
         display: grid;
         grid-template-columns: repeat(2,200px);
@@ -72,11 +75,13 @@
         <div>
             First Name:
         </div>
-        <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+        <div><input type="text" name="" class="box" placeholder="Enter First name" id="firstname" onblur="return checkfirstName()"> <span id="msg1"></span></div>
         <div>
-            Last Name
+            Last Name 
         </div>
-        <div><input type="text" name="" class="box" placeholder="Enter your Last name"></div>
+        
+        <div><input type="text" name="" class="box" placeholder="Enter your Last name" id="lastname"
+            onkeyup="return checklastName()"> <span id="msg2"></span></div>
         <div>
             Email:
         </div>
@@ -145,12 +150,28 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
 <script>
-    $(document).ready(function(){
-        $("#registration").click(function(){
-            alert("Please Enter your Last Name")
+    // $(document).ready(function(){
+    //     $("#registration").click(function(){
+    //         alert("Please Enter your Last Name")
 
-        })
-    })
+    //     })
+    // })
+
+    function checkfirstName() {
+            var user = document.getElementById("firstname").value;
+            if (user == "" || user == null) {
+                document.getElementById("msg1").innerText = "Enter first name";
+                return false;
+            }
+        }
+
+        function checklastName() {
+            var user1 = document.getElementById("lastname").value;
+            if (user1 == "" || user1 == null) {
+                document.getElementById("msg2").innerText = "Enter last name";
+                return false;
+            }
+        }
 </script>
 </body>
 </html>
