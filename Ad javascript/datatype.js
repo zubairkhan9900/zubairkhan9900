@@ -23,5 +23,5 @@ let productData = {
 
 
 
-        //  print title , price, black color, 3g category 
+        //  store address , name ,age, hobby of yours
 
