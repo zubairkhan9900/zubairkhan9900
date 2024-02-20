@@ -85,7 +85,8 @@
         <div>
             Email:
         </div>
-        <div><input type="text" name="" class="box" placeholder="it should contain @,."></div>
+        <div><input type="text" name="" class="box" placeholder="it should contain@" id="itcontain@"
+            onkeyup="return checkcontain()"> <span id="msg3"></span></div>
         <div>
           Mobile:
           </div>
@@ -106,16 +107,19 @@
             <div>
                 City:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Entercityname"
+                onkeyup="return checkcontain()"> <span id="msg4"></span></div>
             <div>
                 Area PIN:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Enterareapin"
+                onkeyup="return checkcontain()"> <span id="msg5"></span></div>
 
             <div>
                 State:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Enter name"
+                onkeyup="return checkcontain()"> <span id="msg6"></span></div>
 
             <div>
                 Qualification:
@@ -150,13 +154,13 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
 <script>
-    // $(document).ready(function(){
-    //     $("#registration").click(function(){
-    //         alert("Please Enter your Last Name")
+        // $(document).ready(function(){
+        //     $("#registration").click(function(){
+        //         alert("Please Enter your Last Name")
 
-    //     })
-    // })
-
+        //     })
+        // })
+gg
     function checkfirstName() {
             var user = document.getElementById("firstname").value;
             if (user == "" || user == null) {
@@ -172,6 +176,33 @@
                 return false;
             }
         }
+
+        function checkcontain() {
+            var user2 = document.getElementById("itcontain@").value;
+            if (user2 == "" || user2 == null) {
+                document.getElementById("msg3").innerText = "itcontain@";
+                return false;
+            }
+        }
+
+
+        function checkcontain() {
+            var user3 = document.getElementById("Entercityname").value;
+            if (user3 == "" || user3 == null) {
+                document.getElementById("msg4").innerText = "Enter cityname";
+                return false;
+            }
+        }
+
+        function checkcontain() {
+            var user4 = document.getElementById("Enterareapin").value;
+            if (user4 == "" || user4 == null) {
+                document.getElementById("msg5").innerText = "Enterareapin";
+                return false;
+            }
+        }
+
+
 </script>
 </body>
 </html>
