@@ -90,7 +90,8 @@
         <div>
           Mobile:
           </div>
-        <div><input type="text" name="" class="box" placeholder="Only 10 digits are allowed"></div>
+        <div><input type="text" name="" class="box" placeholder="Only 10 digits are allowed" id="10digits"
+            onkeyup="return check10digits()"><span id="msg4"></span></div>
            <div>
         Gender:
         </div>
@@ -108,18 +109,18 @@
                 City:
             </div>
             <div><input type="text" name="" class="box" placeholder="Enter First name" id="Entercityname"
-                onkeyup="return checkcontain()"><span id="msg4"></span></div>
+                onkeyup="return checkcityname()"><span id="msg5"></span></div>
             <div>
                 Area PIN:
             </div>
             <div><input type="text" name="" class="box" placeholder="Enter First name"id="Enterareapin"
-                onkeyup="return checkcontain()"><span id="msg5"></span></div>
+                onkeyup="return checkareapin()"><span id="msg6"></span></div>
 
             <div>
                 State:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Enter name"
-                onkeyup="return checkcontain()"><span id="msg6"></span></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Entername"
+                onkeyup="return checkname()"><span id="msg7"></span></div>
 
             <div>
                 Qualification:
@@ -169,7 +170,7 @@ gg
             }
         }
 
-        function checklastName() {
+        function check10digits() {
             var user1 = document.getElementById("lastname").value;
             if (user1 == "" || user1 == null) {
                 document.getElementById("msg2").innerText = "Enter last name";
@@ -185,47 +186,39 @@ gg
             }
         }
 
-
-        function checkcontain() {
-            var user3 = document.getElementById("Entercityname").value;
+        function checklastName() {
+            var user3 = document.getElementById("10digits").value;
             if (user3 == "" || user3 == null) {
-                document.getElementById("msg4").innerText = "Enter cityname";
+                document.getElementById("msg4").innerText = "Enter 10 digits";
                 return false;
             }
         }
 
-        function checkcontain() {
-            var user4 = document.getElementById("Enterareapin").value;
+        function checkcityname() {
+            var user4 = document.getElementById("Entercityname").value;
             if (user4 == "" || user4 == null) {
-                document.getElementById("msg5").innerText = "Enterareapin";
+                document.getElementById("msg5").innerText = "Enter cityname";
                 return false;
             }
         }
 
-        function checkcontain() {
-            var user4 = document.getElementById("Enterareapin").value;
-            if (user4 == "" || user4 == null) {
-                document.getElementById("msg5").innerText = "Enterareapin";
+        function checkareapin() {
+            var user5 = document.getElementById("Enterareapin").value;
+            if (user5 == "" || user5 == null) {
+                document.getElementById("msg6").innerText = "Enter areapin";
                 return false;
             }
         }
 
-        function checkcontain() {
-            var user4 = document.getElementById("Enterareapin").value;
-            if (user4 == "" || user4 == null) {
-                document.getElementById("msg5").innerText = "Enterareapin";
+        function checkname() {
+            var user6 = document.getElementById("Entername").value;
+            if (user6 == "" || user6 == null) {
+                document.getElementById("msg7").innerText = "Enter name";
                 return false;
             }
         }
 
-        function checkcontain() {
-            var user4 = document.getElementById("Enterareapin").value;
-            if (user4 == "" || user4 == null) {
-                document.getElementById("msg5").innerText = "Enterareapin";
-                return false;
-            }
-        }
-
+        
 
 </script>
 </body>
