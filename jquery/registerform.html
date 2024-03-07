@@ -10,6 +10,9 @@
         margin: 0px;
         padding: 0;
     }
+    span {
+            color: red;
+        }
     .form1{
         display: grid;
         grid-template-columns: repeat(2,200px);
@@ -72,19 +75,23 @@
         <div>
             First Name:
         </div>
-        <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+        <div><input type="text" name="" class="box" placeholder="Enter First name" id="firstname" onblur="return checkfirstName()"> <span id="msg1"></span></div>
         <div>
-            Last Name
+            Last Name 
         </div>
-        <div><input type="text" name="" class="box" placeholder="Enter your Last name"></div>
+        
+        <div><input type="text" name="" class="box" placeholder="Enter your Last name" id="lastname"
+            onkeyup="return checklastName()"> <span id="msg2"></span></div>
         <div>
             Email:
         </div>
-        <div><input type="text" name="" class="box" placeholder="it should contain @,."></div>
+        <div><input type="text" name="" class="box" placeholder="it should contain@" id="itcontain@"
+            onkeyup="return checkcontain()"><span id="msg3"></span></div>
         <div>
           Mobile:
           </div>
-        <div><input type="text" name="" class="box" placeholder="Only 10 digits are allowed"></div>
+        <div><input type="text" name="" class="box" placeholder="Only 10 digits are allowed" id="10digits"
+            onkeyup="return check10digits()"><span id="msg4"></span></div>
            <div>
         Gender:
         </div>
@@ -101,16 +108,19 @@
             <div>
                 City:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name" id="Entercityname"
+                onkeyup="return checkcityname()"><span id="msg5"></span></div>
             <div>
                 Area PIN:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Enterareapin"
+                onkeyup="return checkareapin()"><span id="msg6"></span></div>
 
             <div>
                 State:
             </div>
-            <div><input type="text" name="" class="box" placeholder="Enter First name"></div>
+            <div><input type="text" name="" class="box" placeholder="Enter First name"id="Entername"
+                onkeyup="return checkname()"><span id="msg7"></span></div>
 
             <div>
                 Qualification:
@@ -145,12 +155,71 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
 <script>
-    $(document).ready(function(){
-        $("#registration").click(function(){
-            alert("Please Enter your Last Name")
+        $(document).ready(function(){
+            $("#registration").click(function(){
+                alert("Please Enter your Last Name")
 
+            })
         })
-    })
+gg
+    function checkfirstName() {
+            var user = document.getElementById("firstname").value;
+            if (user == "" || user == null) {
+                document.getElementById("msg1").innerText = "Enter first name";
+                return false;
+            }
+        }
+
+        function check10digits() {
+            var user1 = document.getElementById("lastname").value;
+            if (user1 == "" || user1 == null) {
+                document.getElementById("msg2").innerText = "Enter last name";
+                return false;
+            }
+        }
+
+        function checkcontain() {
+            var user2 = document.getElementById("itcontain@").value;
+            if (user2 == "" || user2 == null) {
+                document.getElementById("msg3").innerText = "itcontain@";
+                return false;
+            }
+        }
+
+        function checklastName() {
+            var user3 = document.getElementById("10digits").value;
+            if (user3 == "" || user3 == null) {
+                document.getElementById("msg4").innerText = "Enter 10 digits";
+                return false;
+            }
+        }
+
+        function checkcityname() {
+            var user4 = document.getElementById("Entercityname").value;
+            if (user4 == "" || user4 == null) {
+                document.getElementById("msg5").innerText = "Enter cityname";
+                return false;
+            }
+        }
+
+        function checkareapin() {
+            var user5 = document.getElementById("Enterareapin").value;
+            if (user5 == "" || user5 == null) {
+                document.getElementById("msg6").innerText = "Enter areapin";
+                return false;
+            }
+        }
+
+        function checkname() {
+            var user6 = document.getElementById("Entername").value;
+            if (user6 == "" || user6 == null) {
+                document.getElementById("msg7").innerText = "Enter name";
+                return false;
+            }
+        }
+
+        
+
 </script>
 </body>
 </html>
